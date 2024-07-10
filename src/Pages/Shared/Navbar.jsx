@@ -1,3 +1,4 @@
+import { Link } from "react-router-dom";
 
 
 const Navbar = () => {
@@ -5,7 +6,9 @@ const Navbar = () => {
 
     const navOptons = <>
 
-       <li><a>Item 1</a></li>
+       <li className="text-white"><Link to={"/"}>Home</Link></li>
+       
+       <li className="text-white"><Link to={"/menu"}>Our Menu</Link></li>
         
        <li><a>Item 3</a></li>
 
@@ -14,7 +17,7 @@ const Navbar = () => {
     return (
         <div>
 
-
+ 
             <div className="navbar fixed z-10 bg-opacity-30 text-white bg-black max-w-screen-xl ">
               <div className="navbar-start">
                 <div className="dropdown">

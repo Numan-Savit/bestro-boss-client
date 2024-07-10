@@ -8,6 +8,7 @@ import {
     createBrowserRouter,
     
   } from "react-router-dom";
+import Menu from "../Pages/Menu/Menu";
 
 
 
@@ -19,6 +20,10 @@ import {
         {
             path:'/',
             element:<Home></Home>
+        },
+        {
+          path:'menu',
+          element:<Menu></Menu>
         }
       ]
     },
